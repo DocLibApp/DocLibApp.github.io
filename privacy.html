@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DocLib – Privacy Policy</title>
+  <meta name="description" content="Privacy Policy for DocLib. Learn how your data is handled, stored, and protected.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main class="shell">
+    <article class="page">
+      <p class="kicker">DocLib</p>
+      <h1>Privacy Policy</h1>
+      <p class="meta">Effective date: March 5, 2026</p>
+      <nav class="topnav" aria-label="Page">
+        <a href="index.html">Home</a>
+        <a href="terms.html">Terms &amp; Conditions</a>
+        <a href="support.html">Support</a>
+      </nav>
+
+      <section class="section">
+        <h2>1. Overview</h2>
+        <p>DocLib is a local-first vault application designed to keep your data private and under your control. This
+          Privacy Policy explains what data DocLib accesses, how it is handled, and your choices regarding that data.
+          DocLib does not require an account for core vault features and does not sell, share, or monetize your personal
+          data.</p>
+      </section>
+
+      <section class="section">
+        <h2>2. Local-First Storage</h2>
+        <p>DocLib stores your vault content, including videos, photos, files, audio, and notes, locally on your device.
+          Your content is not uploaded to external servers by DocLib. All vault data remains on your device unless you
+          explicitly export, share, or back it up. To support in-app viewing and search, DocLib may process and index
+          text locally from supported files, including document and source-code formats and, when enabled, OCR-derived
+          text from images and PDFs. This processing stays on-device.</p>
+      </section>
+
+      <section class="section">
+        <h2>3. Passcode and Biometric Data</h2>
+        <p>Passcode verification uses a one-way cryptographic hash with a unique random salt, stored securely on your
+          device. Your actual passcode is never stored in plain text and cannot be recovered by DocLib. Biometric
+          authentication such as Face ID or Touch ID is handled entirely by iOS through the LocalAuthentication
+          framework. DocLib never receives, accesses, processes, or stores your biometric data. DocLib only receives a
+          success or failure result from the operating system.</p>
+      </section>
+
+      <section class="section">
+        <h2>4. Device Backup Setting</h2>
+        <p>If you enable "Include DocLib data in iPhone backup" in Settings, future iPhone, iCloud, or Finder backups
+          may contain DocLib vault files and local indexes in Apple-managed backup format. These device backups are
+          protected by your device backup settings and Apple's privacy practices, not by DocLib's passphrase-based
+          encrypted backup format. For maximum privacy, use DocLib's own encrypted backup feature instead of or in
+          addition to device backups.</p>
+      </section>
+
+      <section class="section">
+        <h2>5. Encrypted Backups You Create</h2>
+        <p>DocLib encrypted backups use a passphrase you choose to derive an encryption key via industry-standard key
+          derivation, currently PBKDF2. Backup contents and backup manifest metadata are encrypted using authenticated
+          encryption, currently AES-GCM, including item metadata needed for restore such as names, tags, folder
+          structure, and OCR text when present. Keep your passphrase safe. It cannot be recovered, reset, or bypassed by
+          DocLib or its developer. Without your passphrase, your backup data is permanently inaccessible.</p>
+      </section>
+
+      <section class="section">
+        <h2>6. Optional Product Analytics</h2>
+        <p>Analytics are optional and require your explicit consent. You can enable or disable analytics at any time in
+          Settings. When enabled, analytics collect aggregated, non-identifying usage patterns such as feature usage
+          counts, session duration, and error categories. Analytics are designed to avoid collecting vault content
+          details including filenames, OCR text, media content, tags, folder names, and document payloads. If
+          configured, aggregated analytics data may be transmitted to our servers over encrypted HTTPS connections for
+          product improvement. In Settings, you can view an analytics summary and reset local analytics data. When
+          analytics are disabled, DocLib stops collecting analytics and clears pending local aggregates.</p>
+      </section>
+
+      <section class="section">
+        <h2>7. Browser and Web Imports</h2>
+        <p>When you use Private Browser or download content from links, your device connects directly to the websites
+          you visit. DocLib does not proxy your browsing traffic and does not maintain an account-linked browsing
+          profile. Open tabs and URLs are kept only for the active private-browsing session and are cleared according to
+          your selected session reset behavior. To preserve privacy, Private Browser blocks non-web URL schemes and
+          prevents in-browser link handoff to external apps. DocLib does not sell or share browsing data. Website
+          operators may still receive standard network information from your device, such as your IP address and user
+          agent, as part of normal web communication. You are responsible for understanding the privacy practices of
+          websites you visit.</p>
+      </section>
+
+      <section class="section">
+        <h2>8. Local Network Transfers</h2>
+        <p>Wi-Fi Transfer runs a temporary local HTTP server on your device only while you have an active transfer
+          session open. The server uses a session-specific security token and is accessible only on your local network.
+          Files sent from your computer are imported directly into your selected vault library without passing through
+          any external servers. The server stops immediately when you close the transfer view. DocLib uses your local
+          network solely for this file transfer purpose.</p>
+      </section>
+
+      <section class="section">
+        <h2>9. Share Extension</h2>
+        <p>The DocLib Share Extension allows you to import content from other apps. Shared content is written to a
+          secure shared container accessible only to DocLib, protected by file-level encryption with <span
+            class="mono">NSFileProtectionComplete</span>. The Share Extension does not transmit any data externally.</p>
+      </section>
+
+      <section class="section">
+        <h2>10. Camera and Microphone</h2>
+        <p>DocLib requests camera access only when you choose to capture photos or videos for import into your vault.
+          Microphone access is used solely for recording audio during video capture. DocLib does not access your camera
+          or microphone in the background or for any purpose other than content you explicitly choose to capture.</p>
+      </section>
+
+      <section class="section">
+        <h2>11. Photo Library</h2>
+        <p>DocLib uses Apple's system photo picker when you choose to import photos or videos or set a custom background
+          from Photos. iOS may let you browse and select items in that picker without granting DocLib blanket access to
+          your entire library. DocLib receives only the items you explicitly choose and any additional access iOS
+          requires to finish that specific import request, such as selected Live Photo resources or iCloud-backed
+          assets. DocLib does not scan, index, or access your photo library in the background or without your explicit
+          action.</p>
+      </section>
+
+      <section class="section">
+        <h2>12. Files and Document Picker</h2>
+        <p>DocLib accesses files and folders only through Apple's system document picker, through explicit folder
+          selections for backup and restore, or through content you intentionally share into DocLib. iOS grants access
+          only to the specific files or folders you choose. There is no blanket Files permission prompt for DocLib, and
+          the app does not browse your Files locations without your explicit selection.</p>
+      </section>
+
+      <section class="section">
+        <h2>13. Notifications</h2>
+        <p>DocLib may request permission to send local notifications for backup reminders and storage-limit progress
+          reminders, for example when approaching free-plan item-count thresholds. Notification content is generated
+          locally on your device and does not contain vault content or sensitive information. You can disable
+          notifications at any time through iOS Settings.</p>
+      </section>
+
+      <section class="section">
+        <h2>14. Purchases</h2>
+        <p>In-app purchases and subscriptions are processed entirely by Apple through the App Store. DocLib does not
+          collect, process, store, or have access to your payment information, credit card details, or Apple ID
+          credentials. Subscription status is verified through Apple's StoreKit framework. Purchase and billing
+          inquiries should be directed to Apple.</p>
+      </section>
+
+      <section class="section">
+        <h2>15. Data Retention and Deletion</h2>
+        <p>All vault content is stored locally on your device and is under your full control. You can delete individual
+          items, folders, or all vault data at any time through the app. Deleted items are moved to Recently Deleted
+          where they are retained for up to 30 days before automatic permanent removal. You can permanently delete items
+          from Recently Deleted at any time. Associated local search-index text is removed with item deletion and
+          reindex operations. Analytics data, if enabled, is stored locally and can be reset through Settings. If you
+          delete the app, iOS removes data in the app container from the device; backups or exports created outside the
+          app, including iPhone, iCloud, Finder backups and exported DocLib backup files, may remain until you delete
+          them separately.</p>
+      </section>
+
+      <section class="section">
+        <h2>16. Data Security</h2>
+        <p>DocLib employs multiple layers of security to protect your data, including iOS Data Protection classes,
+          passcode verification using a salted slow hash, secure credential storage in the iOS Keychain, and
+          authenticated encryption for encrypted backups. While DocLib implements industry-standard security measures,
+          no software can guarantee absolute protection against all threats.</p>
+      </section>
+
+      <section class="section">
+        <h2>17. Children's Privacy</h2>
+        <p>DocLib is not directed at children under the age of 17. We do not knowingly collect personal information from
+          children. If you believe that a child has used DocLib in a way that raises privacy concerns, contact us so we
+          can take appropriate steps.</p>
+      </section>
+
+      <section class="section">
+        <h2>18. Third-Party Services</h2>
+        <p>DocLib does not include third-party advertising SDKs, social media trackers, or third-party analytics
+          frameworks. The only third-party interaction occurs when you voluntarily use features that connect to external
+          services, such as Private Browser, link downloads, and Wi-Fi Transfer. These interactions are initiated solely
+          by you and are governed by the respective third parties' privacy policies.</p>
+      </section>
+
+      <section class="section">
+        <h2>19. Your Rights</h2>
+        <p>Because DocLib is local-first and does not maintain user accounts or external data stores, your data is
+          inherently under your control. You can access, export, delete, or manage all of your vault content directly
+          through the app at any time. If you have questions about your data or privacy rights under applicable law,
+          such as GDPR or CCPA, contact us.</p>
+      </section>
+
+      <section class="section">
+        <h2>20. Changes to This Policy</h2>
+        <p>We may update this Privacy Policy from time to time to reflect changes in the app, our practices, or
+          applicable law. Material changes will be communicated through the app. Your continued use of DocLib after any
+          changes constitutes your acceptance of the updated Privacy Policy. Review this policy periodically.</p>
+      </section>
+
+      <section class="section">
+        <h2>21. Contact</h2>
+        <p>If you have questions, concerns, or requests regarding this Privacy Policy or DocLib's data practices,
+          contact <a href="mailto:DocLibSupport@icloud.com">DocLibSupport@icloud.com</a>.</p>
+      </section>
+    </article>
+
+    <p class="footer">© 2026 DocLib. All rights reserved.</p>
+  </main>
+</body>
+
+</html>
