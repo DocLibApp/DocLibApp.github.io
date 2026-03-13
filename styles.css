@@ -285,6 +285,17 @@ li {
   box-shadow: 0 4px 12px var(--accent-glow);
 }
 
+.button-link-primary {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 4px 12px var(--accent-glow);
+}
+
+.button-link-primary:hover {
+  background: var(--accent-hover);
+  color: #fff;
+}
+
 /* ---- Legal Sections ---- */
 .section {
   padding-top: 24px;
@@ -380,6 +391,17 @@ li {
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
+.beta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+}
+
+.beta-footnote {
+  margin-top: 14px;
+}
+
 /* ---- Mono (code/tech terms) ---- */
 .mono {
   font-family: 'SF Mono', 'Fira Code', 'Cascadia Code', 'Consolas', monospace;
@@ -413,6 +435,11 @@ li {
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  .beta-actions {
+    flex-direction: column;
+    align-items: flex-start;
   }
 }
 
